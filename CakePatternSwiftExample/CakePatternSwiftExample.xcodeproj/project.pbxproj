@@ -12,6 +12,12 @@
 		EDC566ED1F98D200002197EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC566EB1F98D200002197EC /* Main.storyboard */; };
 		EDC566EF1F98D200002197EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC566EE1F98D200002197EC /* Assets.xcassets */; };
 		EDC566F21F98D200002197EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC566F01F98D200002197EC /* LaunchScreen.storyboard */; };
+		EDC566FE1F98D315002197EC /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC566FD1F98D315002197EC /* Employee.swift */; };
+		EDC567001F98D43F002197EC /* EmployeesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC566FF1F98D43F002197EC /* EmployeesRepository.swift */; };
+		EDC567021F98D4D0002197EC /* EmployeesRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC567011F98D4D0002197EC /* EmployeesRepositoryImplementation.swift */; };
+		EDC567051F98D6B7002197EC /* EmployeesRepositoryInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC567041F98D6B7002197EC /* EmployeesRepositoryInjectable.swift */; };
+		EDC567071F98D795002197EC /* MockEmployeesRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC567061F98D795002197EC /* MockEmployeesRepositoryImplementation.swift */; };
+		EDC5670A1F98D949002197EC /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC567091F98D949002197EC /* EmployeesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		EDC566EE1F98D200002197EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC566F11F98D200002197EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC566F31F98D200002197EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC566FD1F98D315002197EC /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		EDC566FF1F98D43F002197EC /* EmployeesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesRepository.swift; sourceTree = "<group>"; };
+		EDC567011F98D4D0002197EC /* EmployeesRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesRepositoryImplementation.swift; sourceTree = "<group>"; };
+		EDC567041F98D6B7002197EC /* EmployeesRepositoryInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesRepositoryInjectable.swift; sourceTree = "<group>"; };
+		EDC567061F98D795002197EC /* MockEmployeesRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmployeesRepositoryImplementation.swift; sourceTree = "<group>"; };
+		EDC567091F98D949002197EC /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,60 @@
 		EDC566E61F98D200002197EC /* CakePatternSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				EDC567031F98D68C002197EC /* Injectable */,
+				EDC566FC1F98D273002197EC /* Repository */,
+				EDC566FB1F98D265002197EC /* ViewModel */,
+				EDC566FA1F98D259002197EC /* View */,
+				EDC566F91F98D24F002197EC /* Model */,
 				EDC566E71F98D200002197EC /* AppDelegate.swift */,
-				EDC566E91F98D200002197EC /* ViewController.swift */,
 				EDC566EB1F98D200002197EC /* Main.storyboard */,
 				EDC566EE1F98D200002197EC /* Assets.xcassets */,
 				EDC566F01F98D200002197EC /* LaunchScreen.storyboard */,
 				EDC566F31F98D200002197EC /* Info.plist */,
 			);
 			path = CakePatternSwiftExample;
+			sourceTree = "<group>";
+		};
+		EDC566F91F98D24F002197EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC566FD1F98D315002197EC /* Employee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDC566FA1F98D259002197EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDC566E91F98D200002197EC /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDC566FB1F98D265002197EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDC567091F98D949002197EC /* EmployeesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDC566FC1F98D273002197EC /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EDC566FF1F98D43F002197EC /* EmployeesRepository.swift */,
+				EDC567011F98D4D0002197EC /* EmployeesRepositoryImplementation.swift */,
+				EDC567061F98D795002197EC /* MockEmployeesRepositoryImplementation.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EDC567031F98D68C002197EC /* Injectable */ = {
+			isa = PBXGroup;
+			children = (
+				EDC567041F98D6B7002197EC /* EmployeesRepositoryInjectable.swift */,
+			);
+			path = Injectable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC567021F98D4D0002197EC /* EmployeesRepositoryImplementation.swift in Sources */,
+				EDC566FE1F98D315002197EC /* Employee.swift in Sources */,
+				EDC5670A1F98D949002197EC /* EmployeesViewModel.swift in Sources */,
+				EDC567051F98D6B7002197EC /* EmployeesRepositoryInjectable.swift in Sources */,
 				EDC566EA1F98D200002197EC /* ViewController.swift in Sources */,
+				EDC567071F98D795002197EC /* MockEmployeesRepositoryImplementation.swift in Sources */,
 				EDC566E81F98D200002197EC /* AppDelegate.swift in Sources */,
+				EDC567001F98D43F002197EC /* EmployeesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
