@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED8A728E1FA85D940063D01F /* InjectableMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A728D1FA85D940063D01F /* InjectableMapper.swift */; };
+		ED8A72961FA865510063D01F /* EmployeesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A72951FA865510063D01F /* EmployeesViewModelTests.swift */; };
 		EDC566E81F98D200002197EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC566E71F98D200002197EC /* AppDelegate.swift */; };
 		EDC566EA1F98D200002197EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC566E91F98D200002197EC /* ViewController.swift */; };
 		EDC566ED1F98D200002197EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC566EB1F98D200002197EC /* Main.storyboard */; };
@@ -20,7 +22,21 @@
 		EDC5670A1F98D949002197EC /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC567091F98D949002197EC /* EmployeesViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ED8A72981FA865510063D01F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC566DC1F98D200002197EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC566E31F98D200002197EC;
+			remoteInfo = CakePatternSwiftExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		ED8A728D1FA85D940063D01F /* InjectableMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableMapper.swift; sourceTree = "<group>"; };
+		ED8A72931FA865510063D01F /* EmployeesViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeesViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8A72951FA865510063D01F /* EmployeesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModelTests.swift; sourceTree = "<group>"; };
+		ED8A72971FA865510063D01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDC566E41F98D200002197EC /* CakePatternSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakePatternSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC566E71F98D200002197EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC566E91F98D200002197EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		ED8A72901FA865510063D01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDC566E11F98D200002197EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +70,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED8A72941FA865510063D01F /* EmployeesViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED8A72951FA865510063D01F /* EmployeesViewModelTests.swift */,
+				ED8A72971FA865510063D01F /* Info.plist */,
+			);
+			path = EmployeesViewModelTests;
+			sourceTree = "<group>";
+		};
 		EDC566DB1F98D200002197EC = {
 			isa = PBXGroup;
 			children = (
 				EDC566E61F98D200002197EC /* CakePatternSwiftExample */,
+				ED8A72941FA865510063D01F /* EmployeesViewModelTests */,
 				EDC566E51F98D200002197EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC566E41F98D200002197EC /* CakePatternSwiftExample.app */,
+				ED8A72931FA865510063D01F /* EmployeesViewModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +151,7 @@
 		EDC567031F98D68C002197EC /* Injectable */ = {
 			isa = PBXGroup;
 			children = (
+				ED8A728D1FA85D940063D01F /* InjectableMapper.swift */,
 				EDC567041F98D6B7002197EC /* EmployeesRepositoryInjectable.swift */,
 			);
 			path = Injectable;
@@ -125,6 +160,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		ED8A72921FA865510063D01F /* EmployeesViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8A729A1FA865510063D01F /* Build configuration list for PBXNativeTarget "EmployeesViewModelTests" */;
+			buildPhases = (
+				ED8A728F1FA865510063D01F /* Sources */,
+				ED8A72901FA865510063D01F /* Frameworks */,
+				ED8A72911FA865510063D01F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED8A72991FA865510063D01F /* PBXTargetDependency */,
+			);
+			name = EmployeesViewModelTests;
+			productName = EmployeesViewModelTests;
+			productReference = ED8A72931FA865510063D01F /* EmployeesViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EDC566E31F98D200002197EC /* CakePatternSwiftExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDC566F61F98D200002197EC /* Build configuration list for PBXNativeTarget "CakePatternSwiftExample" */;
@@ -152,6 +205,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = dvt;
 				TargetAttributes = {
+					ED8A72921FA865510063D01F = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDC566E31F98D200002197EC;
+					};
 					EDC566E31F98D200002197EC = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
@@ -172,11 +230,19 @@
 			projectRoot = "";
 			targets = (
 				EDC566E31F98D200002197EC /* CakePatternSwiftExample */,
+				ED8A72921FA865510063D01F /* EmployeesViewModelTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		ED8A72911FA865510063D01F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDC566E21F98D200002197EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +256,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		ED8A728F1FA865510063D01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8A72961FA865510063D01F /* EmployeesViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDC566E01F98D200002197EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,11 +275,20 @@
 				EDC566EA1F98D200002197EC /* ViewController.swift in Sources */,
 				EDC567071F98D795002197EC /* MockEmployeesRepositoryImplementation.swift in Sources */,
 				EDC566E81F98D200002197EC /* AppDelegate.swift in Sources */,
+				ED8A728E1FA85D940063D01F /* InjectableMapper.swift in Sources */,
 				EDC567001F98D43F002197EC /* EmployeesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED8A72991FA865510063D01F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC566E31F98D200002197EC /* CakePatternSwiftExample */;
+			targetProxy = ED8A72981FA865510063D01F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EDC566EB1F98D200002197EC /* Main.storyboard */ = {
@@ -227,6 +310,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		ED8A729B1FA865510063D01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmployeesViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvt.EmployeesViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakePatternSwiftExample.app/CakePatternSwiftExample";
+			};
+			name = Debug;
+		};
+		ED8A729C1FA865510063D01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmployeesViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvt.EmployeesViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakePatternSwiftExample.app/CakePatternSwiftExample";
+			};
+			name = Release;
+		};
 		EDC566F41F98D200002197EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,6 +478,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ED8A729A1FA865510063D01F /* Build configuration list for PBXNativeTarget "EmployeesViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8A729B1FA865510063D01F /* Debug */,
+				ED8A729C1FA865510063D01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EDC566DF1F98D200002197EC /* Build configuration list for PBXProject "CakePatternSwiftExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -10,15 +10,10 @@ import Foundation
 
 protocol EmployeesRepositoryInjectable {
     var employees : EmployeesRepository {get}
-    var mockEmployees: EmployeesRepository {get}
 }
 
 extension EmployeesRepositoryInjectable {
     var employees : EmployeesRepository {
-        return EmployeesRepositoryImplementation()
-    }
-    
-    var mockEmployees : EmployeesRepository {
-        return MockEmployeesRepositoryImplementation()
+        return InjectableMap.resolve()
     }
 }
